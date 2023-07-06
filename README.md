@@ -3,7 +3,7 @@ This repository is about Capstone Project as final project of Hybrid Cloud and A
 The application i made is a chatbot named Vainglory Assistant to help maintain website i made [here](https://vainglorydraft.fhackrenn.repl.co/) to ease people if they have questions or technical issues regarding the game using Watson Assistant service and Watson Discovery as its search skill.
 
 You can find original repository of the website at [Vainglory Assistant](https://github.com/fHACKrenn/VaingloryDraft).
-The works as a draft simulator for Vainglory
+The website works as a draft simulator for Vainglory
 
 ## Developer Profile
 - Name              : Fachrendy Zulfikar Abdillah

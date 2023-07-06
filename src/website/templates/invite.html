@@ -1,0 +1,47 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+  <header class="header">
+    <section class="container">
+        <div class="row">
+          <div class="column">
+            <label for="teamBlue">Team Blue
+              <button class="button button-clear clipboard" data-clipboard-target="#foo">
+                Copy to clipboard
+              </button>
+            </label>
+            <input id="foo" type="text" value="{{ team_blue }}" name="teamBlue">
+          </div>
+
+          <div class="column">
+            <label for="teamRed">Team Red
+              <button class="button button-clear clipboard" data-clipboard-target="#bar">
+                Copy to clipboard
+              </button>
+            </label>
+            <input id="bar" type="text" value="{{ team_red }}" name="teamRed">
+          </div>
+        </div>
+
+        <div class="column">
+          <label for="teamRed"> Spectators
+            <button class="button button-clear clipboard" data-clipboard-target="#baz">
+              Copy to clipboard
+            </button>
+          </label>
+          <input id="baz" type="text" value="{{ spectators }}" name="spectators">
+        </div>
+
+        <div class="column" style="margin-top: 2.5rem;">
+          <p><button id="startDraft" class="button" title="Start Draft">Start Draft</button></p>
+        </div>
+    </section>
+  </header>
+{% end %}
+
+{% block js %}
+<script>
+  const room = "{{ room }}";
+  const admin_url = "{{ admin }}"
+</script>
+{% end %}

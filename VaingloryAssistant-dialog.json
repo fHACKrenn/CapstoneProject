@@ -1,0 +1,2782 @@
+{
+  "intents": [
+    {
+      "intent": "accountProblem",
+      "examples": [
+        {
+          "text": "Can i get my account back?"
+        },
+        {
+          "text": "How to recover my account?"
+        },
+        {
+          "text": "How to retrieve my account?"
+        },
+        {
+          "text": "I can’t log in, where is my account?"
+        },
+        {
+          "text": "Is account disabled for Vainglory?"
+        }
+      ],
+      "description": "Problems regarding account"
+    },
+    {
+      "intent": "communitiesVainglory",
+      "examples": [
+        {
+          "text": "comminities"
+        },
+        {
+          "text": "Is there any active community?"
+        },
+        {
+          "text": "Is there any server communities?"
+        }
+      ],
+      "description": "Communities of Vainglory"
+    },
+    {
+      "intent": "competitiveScene",
+      "examples": [
+        {
+          "text": "Are there any upcoming Vainglory esports events or championships?"
+        },
+        {
+          "text": "Is there any tournaments of Vainglory now?"
+        },
+        {
+          "text": "Where can i find a tournament of Vainglory?"
+        }
+      ],
+      "description": "Condition and scene while Vainglory was still alive"
+    },
+    {
+      "intent": "deadGame",
+      "examples": [
+        {
+          "text": "Is Vainglory a dead game?"
+        },
+        {
+          "text": "What happened to Vainglory?"
+        },
+        {
+          "text": "When was the time when Vainglory died?"
+        }
+      ],
+      "description": "How Vainglory died"
+    },
+    {
+      "intent": "gameInformation",
+      "examples": [
+        {
+          "text": "Is Vainglory a free-to-play game?"
+        },
+        {
+          "text": "What are the different objectives in Vainglory?",
+          "mentions": [
+            {
+              "entity": "gameName",
+              "location": [
+                37,
+                46
+              ]
+            }
+          ]
+        },
+        {
+          "text": "What is Vainglory?"
+        },
+        {
+          "text": "When was Vainglory first released?"
+        },
+        {
+          "text": "Who are the publishers of Vainglory?"
+        }
+      ],
+      "description": "General information regarding Vainglory"
+    },
+    {
+      "intent": "gameUpdates",
+      "examples": [
+        {
+          "text": "Can you provide details on the upcoming features or content planned for Vainglory?"
+        },
+        {
+          "text": "What are the new features introduced in the latest Vainglory update?"
+        },
+        {
+          "text": "Will Vainglory ever return?"
+        }
+      ],
+      "description": "Future updates and upcoming features of Vainglory"
+    },
+    {
+      "intent": "General_About_You",
+      "examples": [
+        {
+          "text": "About you"
+        },
+        {
+          "text": "Can I use another language?"
+        },
+        {
+          "text": "Describe your self"
+        },
+        {
+          "text": "Do you have a name?"
+        },
+        {
+          "text": "Do you know who you are?"
+        },
+        {
+          "text": "How can I configure you?"
+        },
+        {
+          "text": "How do you function?"
+        },
+        {
+          "text": "How old are you?"
+        },
+        {
+          "text": "Introduce your self"
+        },
+        {
+          "text": "I want to set up the chat bot for my shop"
+        },
+        {
+          "text": "Let us talk about you"
+        },
+        {
+          "text": "Tell me about your life"
+        },
+        {
+          "text": "Tell me something about yourself"
+        },
+        {
+          "text": "What languages do you speak?"
+        },
+        {
+          "text": "What should I know about you?"
+        },
+        {
+          "text": "What's your name?"
+        },
+        {
+          "text": "Where are you from?"
+        },
+        {
+          "text": "Where were you born?"
+        },
+        {
+          "text": "Who are you?"
+        },
+        {
+          "text": "Why are you here?"
+        }
+      ],
+      "description": "Request generic personal attributes."
+    },
+    {
+      "intent": "General_Agent_Capabilities",
+      "examples": [
+        {
+          "text": "Can you please give me a list of the types of things you can help me with?"
+        },
+        {
+          "text": "Can you tell me what services you are able to help me with?"
+        },
+        {
+          "text": "Do you have a list of things I can talk to you about?"
+        },
+        {
+          "text": "Help now"
+        },
+        {
+          "text": "Hi, what do you do?"
+        },
+        {
+          "text": "How can I use you?"
+        },
+        {
+          "text": "How can you help?"
+        },
+        {
+          "text": "How can you help me?"
+        },
+        {
+          "text": "How can you solve my problems?"
+        },
+        {
+          "text": "How do I use you?"
+        },
+        {
+          "text": "I'd like to know what type of questions you can answer for me."
+        },
+        {
+          "text": "I do not know what to ask"
+        },
+        {
+          "text": "Is there anything you can help me with?"
+        },
+        {
+          "text": "Tell me about what kind of things you do?"
+        },
+        {
+          "text": "Tell me something"
+        },
+        {
+          "text": "What are my options?"
+        },
+        {
+          "text": "What are my options that you can help with?"
+        },
+        {
+          "text": "What are you able to deal with?"
+        },
+        {
+          "text": "What are you able to understand?"
+        },
+        {
+          "text": "What are you capable of?"
+        },
+        {
+          "text": "What are you good at?"
+        },
+        {
+          "text": "What are your skills?"
+        },
+        {
+          "text": "What are you used for?"
+        },
+        {
+          "text": "What can I ask you to do?"
+        },
+        {
+          "text": "What do you do?"
+        },
+        {
+          "text": "What do you handle?"
+        },
+        {
+          "text": "What else can you help me with?"
+        },
+        {
+          "text": "What features are in here?"
+        },
+        {
+          "text": "What is this 4?"
+        },
+        {
+          "text": "What kinds of things can you do?"
+        },
+        {
+          "text": "Where can I find the frequently asked questions?"
+        }
+      ],
+      "description": "Request capabilities of the bot."
+    },
+    {
+      "intent": "General_Connect_to_Agent",
+      "examples": [
+        {
+          "text": "Agent help"
+        },
+        {
+          "text": "A real agent, please."
+        },
+        {
+          "text": "Call agent"
+        },
+        {
+          "text": "Can I connect to an agent?"
+        },
+        {
+          "text": "Can I speak to a human please?"
+        },
+        {
+          "text": "Can I speak to a live person?"
+        },
+        {
+          "text": "Can I speak to an advisor?"
+        },
+        {
+          "text": "Can I speak with somebody?"
+        },
+        {
+          "text": "Can I talk to someone?"
+        },
+        {
+          "text": "Can you assist me to connect to an agent?"
+        },
+        {
+          "text": "Can you connect me with a real person?"
+        },
+        {
+          "text": "Connect me to a live operator please."
+        },
+        {
+          "text": "Contact person"
+        },
+        {
+          "text": "Could you please transfer me to your master?"
+        },
+        {
+          "text": "Customer service representative please."
+        },
+        {
+          "text": "Do not want a robot?"
+        },
+        {
+          "text": "Hi can you transfer me"
+        },
+        {
+          "text": "How can I skip the recorded menu and go straight to a live person?"
+        },
+        {
+          "text": "I don't want to talk to a bot."
+        },
+        {
+          "text": "I don't want to talk to you"
+        },
+        {
+          "text": "I need to speak to a representative. How would I go about doing so?"
+        },
+        {
+          "text": "Is there anyone there I can actually talk to for real?"
+        },
+        {
+          "text": "I want agent"
+        },
+        {
+          "text": "I want a manager"
+        },
+        {
+          "text": "I want an agent to help me"
+        },
+        {
+          "text": "I want to talk to a person"
+        },
+        {
+          "text": "I would like to speak to a human"
+        },
+        {
+          "text": "I would like to speak to someone"
+        },
+        {
+          "text": "Need help from human"
+        },
+        {
+          "text": "Operator please"
+        },
+        {
+          "text": "Please assist me to get to an agent"
+        },
+        {
+          "text": "Please connect me to a live agent"
+        },
+        {
+          "text": "Please let me talk to a human being."
+        },
+        {
+          "text": "Pls connect"
+        },
+        {
+          "text": "Put me through to someone"
+        },
+        {
+          "text": "Send me to an agent"
+        },
+        {
+          "text": "Where is the closest agent?"
+        },
+        {
+          "text": "Yes, take me to a real person"
+        }
+      ],
+      "description": "Request a human agent."
+    },
+    {
+      "intent": "General_Ending",
+      "examples": [
+        {
+          "text": "Bye bye"
+        },
+        {
+          "text": "Bye now"
+        },
+        {
+          "text": "Catch you later"
+        },
+        {
+          "text": "Cya later"
+        },
+        {
+          "text": "Ending this session"
+        },
+        {
+          "text": "End trial"
+        },
+        {
+          "text": "Finished now, good bye"
+        },
+        {
+          "text": "Get lost"
+        },
+        {
+          "text": "Go away"
+        },
+        {
+          "text": "Going now"
+        },
+        {
+          "text": "Good. bye."
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Go off"
+        },
+        {
+          "text": "Have a nice day?"
+        },
+        {
+          "text": "Hey bot go away"
+        },
+        {
+          "text": "I am leaving"
+        },
+        {
+          "text": "I am out of here"
+        },
+        {
+          "text": "I d like to stop doing this"
+        },
+        {
+          "text": "I have got to go"
+        },
+        {
+          "text": "I'm done"
+        },
+        {
+          "text": "Im done"
+        },
+        {
+          "text": "Im good thank you"
+        },
+        {
+          "text": "I'm leaving now"
+        },
+        {
+          "text": "It was nice chatting with you"
+        },
+        {
+          "text": "I want to quit"
+        },
+        {
+          "text": "Ok goodbye"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "See you later"
+        },
+        {
+          "text": "Shut up"
+        },
+        {
+          "text": "Stop doing this"
+        },
+        {
+          "text": "Stop talking to me"
+        },
+        {
+          "text": "Thanks, bye!"
+        },
+        {
+          "text": "Thanks very much, bye!"
+        },
+        {
+          "text": "Thank you for your time"
+        },
+        {
+          "text": "That is all"
+        },
+        {
+          "text": "That's everything"
+        },
+        {
+          "text": "Time to go"
+        }
+      ],
+      "description": "End the conversation."
+    },
+    {
+      "intent": "General_Greetings",
+      "examples": [
+        {
+          "text": "Good day"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good to see you"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Have you been well?"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hello Agent"
+        },
+        {
+          "text": "Hello I am looking for some help here"
+        },
+        {
+          "text": "Hey how are you doing"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hey there all"
+        },
+        {
+          "text": "Hey twin"
+        },
+        {
+          "text": "Hey you"
+        },
+        {
+          "text": "Hi advisor"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "How are things going?"
+        },
+        {
+          "text": "How are you today?"
+        },
+        {
+          "text": "How have you been?"
+        },
+        {
+          "text": "How is it going?"
+        },
+        {
+          "text": "How r u?"
+        },
+        {
+          "text": "Looking good eve"
+        },
+        {
+          "text": "Ok take me back"
+        },
+        {
+          "text": "What's new?"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "Who is this?"
+        },
+        {
+          "text": "You there"
+        }
+      ],
+      "description": "Greet the bot."
+    },
+    {
+      "intent": "General_Human_or_Bot",
+      "examples": [
+        {
+          "text": "Am I chatting with a human?"
+        },
+        {
+          "text": "Am I talking to a Bot?"
+        },
+        {
+          "text": "Am I talking to a person or am I talking to an AI?"
+        },
+        {
+          "text": "Am I talking to Watson?"
+        },
+        {
+          "text": "Are you a human or a bot?"
+        },
+        {
+          "text": "Are you a robot?"
+        },
+        {
+          "text": "Are you even real?"
+        },
+        {
+          "text": "Are you human?"
+        },
+        {
+          "text": "Are you real?"
+        },
+        {
+          "text": "How can you prove you are a human?"
+        },
+        {
+          "text": "Is this a computer?"
+        },
+        {
+          "text": "Tell me, are you a human or no?"
+        }
+      ],
+      "description": "Ask if speaking to a human or a bot."
+    },
+    {
+      "intent": "General_Jokes",
+      "examples": [
+        {
+          "text": "Another joke"
+        },
+        {
+          "text": "Are there jokes?"
+        },
+        {
+          "text": "Can you tell a joke?"
+        },
+        {
+          "text": "Can you tell me a joke?"
+        },
+        {
+          "text": "Do you have a joke?"
+        },
+        {
+          "text": "Do you have humor?"
+        },
+        {
+          "text": "Do you like fun?"
+        },
+        {
+          "text": "Do you like humor?"
+        },
+        {
+          "text": "I am getting bored"
+        },
+        {
+          "text": "I'm bored"
+        },
+        {
+          "text": "I want a joke"
+        },
+        {
+          "text": "One more joke"
+        },
+        {
+          "text": "Surprise me with something hilarious"
+        },
+        {
+          "text": "Tell me a joke"
+        },
+        {
+          "text": "Tell me something funny"
+        },
+        {
+          "text": "What do you do for fun?"
+        },
+        {
+          "text": "What is your favorite joke?"
+        }
+      ],
+      "description": "Request a joke."
+    },
+    {
+      "intent": "General_Negative_Feedback",
+      "examples": [
+        {
+          "text": "Do not like you?"
+        },
+        {
+          "text": "Everyone hates you"
+        },
+        {
+          "text": "Hate you"
+        },
+        {
+          "text": "I do not like you"
+        },
+        {
+          "text": "I hate this!"
+        },
+        {
+          "text": "I hate you"
+        },
+        {
+          "text": "It is annoying"
+        },
+        {
+          "text": "Quit annoying me"
+        },
+        {
+          "text": "Robots are boring"
+        },
+        {
+          "text": "Robots are stupid"
+        },
+        {
+          "text": "Stupid"
+        },
+        {
+          "text": "Why are you so annoying?"
+        },
+        {
+          "text": "Why are you stupid?"
+        },
+        {
+          "text": "You are having delusions"
+        },
+        {
+          "text": "You are on my nerves"
+        },
+        {
+          "text": "You are very frustrating"
+        },
+        {
+          "text": "You do not seem smart"
+        },
+        {
+          "text": "You're really frustrating"
+        },
+        {
+          "text": "You're really irritating"
+        },
+        {
+          "text": "You're too stupid"
+        }
+      ],
+      "description": "Express unfavorable feedback."
+    },
+    {
+      "intent": "General_Positive_Feedback",
+      "examples": [
+        {
+          "text": "Brilliant!"
+        },
+        {
+          "text": "Can't believe you are that good"
+        },
+        {
+          "text": "How cool is this?"
+        },
+        {
+          "text": "I like what you did there! :)"
+        },
+        {
+          "text": "I'm looking forward to working with you again! :)"
+        },
+        {
+          "text": "Love your work"
+        },
+        {
+          "text": "Ok thank you"
+        },
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "This is good"
+        },
+        {
+          "text": "This is great"
+        },
+        {
+          "text": "This is so cool"
+        },
+        {
+          "text": "You are awesome"
+        },
+        {
+          "text": "You are great"
+        },
+        {
+          "text": "You are the best"
+        },
+        {
+          "text": "You are wonderful"
+        },
+        {
+          "text": "You gave me exactly what I need!"
+        },
+        {
+          "text": "You're a genius!"
+        },
+        {
+          "text": "You the man"
+        },
+        {
+          "text": "You've been so helpful :)"
+        }
+      ],
+      "description": "Express positive sentiment or gratitude."
+    },
+    {
+      "intent": "General_Security_Assurance",
+      "examples": [
+        {
+          "text": "Are you safe?"
+        },
+        {
+          "text": "Are you safe on hackers?"
+        },
+        {
+          "text": "Can I be sure that my stored card details are held securely?"
+        },
+        {
+          "text": "Conversation secure?"
+        },
+        {
+          "text": "Customer info secured?"
+        },
+        {
+          "text": "Do you have protection against hacks?"
+        },
+        {
+          "text": "How do I know if my card info is kept safe?"
+        },
+        {
+          "text": "How do I know this chat is not a scam?"
+        },
+        {
+          "text": "How is my credit card info secured?"
+        },
+        {
+          "text": "How safe is my data?"
+        },
+        {
+          "text": "I'd like proof of a secure chat"
+        },
+        {
+          "text": "In what way can I tell if my plastic is safe?"
+        },
+        {
+          "text": "Is my card info secure?"
+        },
+        {
+          "text": "Is my payment information secure?"
+        },
+        {
+          "text": "Is there a reason to distrust this chat?"
+        },
+        {
+          "text": "Is this an official chat?"
+        },
+        {
+          "text": "Is this a trusted chat site?"
+        },
+        {
+          "text": "Is this conversation secure?"
+        },
+        {
+          "text": "Precautions hackers?"
+        },
+        {
+          "text": "Protection hacks?"
+        },
+        {
+          "text": "Secure conversation?"
+        },
+        {
+          "text": "What guards do you have in place to protect your customer's data?"
+        },
+        {
+          "text": "What makes this chat trustworthy?"
+        },
+        {
+          "text": "What safety measures are used to ensure that chat is secure?"
+        },
+        {
+          "text": "Why would I trust this chat?"
+        },
+        {
+          "text": "Will my conversation remain secured?"
+        }
+      ],
+      "description": "Express concerns about the security of the bot."
+    },
+    {
+      "intent": "heroDetails",
+      "examples": [
+        {
+          "text": "I want to know about Catherine"
+        },
+        {
+          "text": "I want to know about heroes"
+        }
+      ],
+      "description": "Details of heroes using watson discovery web crawl"
+    },
+    {
+      "intent": "newMechanics",
+      "examples": [
+        {
+          "text": "How can i change region?",
+          "mentions": [
+            {
+              "entity": "serverRegion",
+              "location": [
+                17,
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "text": "How to make a party?",
+          "mentions": [
+            {
+              "entity": "partyCode",
+              "location": [
+                14,
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "text": "How to play together?",
+          "mentions": [
+            {
+              "entity": "partyCode",
+              "location": [
+                7,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "text": "What are some recommended starting heroes for new players?",
+          "mentions": [
+            {
+              "entity": "startingHeroes",
+              "location": [
+                26,
+                41
+              ]
+            }
+          ]
+        },
+        {
+          "text": "What are the different roles or positions in Vainglory?",
+          "mentions": [
+            {
+              "entity": "gameRoles",
+              "location": [
+                23,
+                28
+              ]
+            },
+            {
+              "entity": "gameRoles",
+              "location": [
+                32,
+                41
+              ]
+            }
+          ]
+        },
+        {
+          "text": "What is sniping? What are sniping servers?"
+        }
+      ],
+      "description": "The new mechanic to play Vainglory"
+    },
+    {
+      "intent": "otherSources",
+      "examples": [
+        {
+          "text": "Is there any other sources i can look for regarding Vainglory?"
+        },
+        {
+          "text": "Where can I find another information of Vainglory?"
+        },
+        {
+          "text": "Where can I find guides and other resources?"
+        },
+        {
+          "text": "Where can i find updates of Vainglory?"
+        }
+      ],
+      "description": "Sources for Vainglory"
+    },
+    {
+      "intent": "technicalSupport",
+      "examples": [
+        {
+          "text": "Can I change region?",
+          "mentions": [
+            {
+              "entity": "serverRegion",
+              "location": [
+                13,
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Can I play on PC or Mac?",
+          "mentions": [
+            {
+              "entity": "pcPlatform",
+              "location": [
+                14,
+                16
+              ]
+            },
+            {
+              "entity": "pcPlatform",
+              "location": [
+                20,
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "text": "how can i use skin?"
+        },
+        {
+          "text": "How to use skins in vainglory?",
+          "mentions": [
+            {
+              "entity": "skinsAndTalents",
+              "location": [
+                11,
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "text": "How to use talents in vainglory?",
+          "mentions": [
+            {
+              "entity": "skinsAndTalents",
+              "location": [
+                11,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am having high ping, is there any solution?",
+          "mentions": [
+            {
+              "entity": "connectionIssues",
+              "location": [
+                17,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am having unstable ping, what should I do?",
+          "mentions": [
+            {
+              "entity": "connectionIssues",
+              "location": [
+                21,
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I'm experiencing connection issues while playing Vainglory. How can I troubleshoot this?",
+          "mentions": [
+            {
+              "entity": "connectionIssues",
+              "location": [
+                17,
+                34
+              ]
+            }
+          ]
+        },
+        {
+          "text": "My screen freeze on home screen in Steam version",
+          "mentions": [
+            {
+              "entity": "screenFreeze",
+              "location": [
+                10,
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "text": "What are the system requirements for running Vainglory on PC?",
+          "mentions": [
+            {
+              "entity": "gameSystemRequirements",
+              "location": [
+                13,
+                32
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "Technical support for Vainglory issues and problems"
+    },
+    {
+      "intent": "yes",
+      "examples": [
+        {
+          "text": "Correct"
+        },
+        {
+          "text": "Please do."
+        },
+        {
+          "text": "Please do that."
+        },
+        {
+          "text": "That is correct."
+        },
+        {
+          "text": "That's right"
+        },
+        {
+          "text": "yeah"
+        },
+        {
+          "text": "Yes"
+        },
+        {
+          "text": "Yes, I'd like to go ahead with that."
+        },
+        {
+          "text": "You've got it right."
+        },
+        {
+          "text": "Yup"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "communitiesVainglory",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "communities",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "community",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "connectionIssues",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "connection issues",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ping",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "discordServers",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bubbleland",
+          "synonyms": [
+            "Bbl"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "DLC Lambo",
+          "synonyms": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "In bf we trust",
+          "synonyms": [
+            "In bf"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Radio Rusak",
+          "synonyms": [
+            "RR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vainglory Server",
+          "synonyms": [
+            "Official Vainglory Discord Server"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gameHeroes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Adagio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Alpha",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Amael",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Anka",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ardan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Baptiste",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Baron",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Blackfeather",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Caine",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Catherine",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Celeste",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Churnwalker",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Flicker",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fortress",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Glaive",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Grace",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Grumpjaw",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gwen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Idris",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Inara",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ishtar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Joule",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Karas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kensei",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kestrel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kinetic",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Koshka",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Krul",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lance",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Leo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lorelai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lyra",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Magnus",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Malene",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Miho",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ozo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Petal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Phinn",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Reim",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Reza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ringo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rona",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Samuel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Feng",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "S.A.W",
+          "synonyms": [
+            "Saw"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Shin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Silvernail",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Skaarf",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Skye",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Taka",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tony",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Varya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Viola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vox",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Warhawk",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Yates",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ylva",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gameName",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Vainglory",
+          "synonyms": [
+            "vg"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gamePlatform",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Android",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "iOS",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PC",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gameRoles",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "captain",
+          "synonyms": [
+            "support"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "jungling",
+          "synonyms": [
+            "jungler"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "laning",
+          "synonyms": [
+            "laner"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "positions",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "roles",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gameSystemRequirements",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "system requirements",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ingameItems",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Aegis",
+          "synonyms": [
+            "Block"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Aftershock",
+          "synonyms": [
+            "AS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Alternating Current",
+          "synonyms": [
+            "AC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Atlas Pauldron",
+          "synonyms": [
+            "Atlas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bonesaw",
+          "synonyms": [
+            "BS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Breaking Point",
+          "synonyms": [
+            "BP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Broken Myth",
+          "synonyms": [
+            "BM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Capacitor Plate",
+          "synonyms": [
+            "Capacitor",
+            "CP",
+            "Plate"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Celestial Shroud",
+          "synonyms": [
+            "Shroud"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Clockwork",
+          "synonyms": [
+            "CW"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Crucible",
+          "synonyms": [
+            "Block",
+            "Cruci"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Crystal Infusion",
+          "synonyms": [
+            "Cp infuse",
+            "Crystal infuse"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dragon's Eye",
+          "synonyms": [
+            "DE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Eve of Harvest",
+          "synonyms": [
+            "EoH",
+            "Eve"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Fountain of Renewal",
+          "synonyms": [
+            "Fountain"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Frostburn",
+          "synonyms": [
+            "FB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Halcyon Chargers",
+          "synonyms": [
+            "Halcyon boots"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Journey Boots",
+          "synonyms": [
+            "Journey"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Metal Jacket",
+          "synonyms": [
+            "Jacket"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Poisoned Shiv",
+          "synonyms": [
+            "PS",
+            "Shiv"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pulsewave",
+          "synonyms": [
+            "PW"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rook's Decree",
+          "synonyms": [
+            "RD",
+            "Rook's"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Serpent Mask",
+          "synonyms": [
+            "Mask",
+            "SM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Shatterglass",
+          "synonyms": [
+            "SG"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Shiversteel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sorrowblade",
+          "synonyms": [
+            "SB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Spellfire",
+          "synonyms": [
+            "SF"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Spellsword",
+          "synonyms": [
+            "SS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Stormcrown",
+          "synonyms": [
+            "SC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "SuperScour 2000",
+          "synonyms": [
+            "Flare",
+            "Scout",
+            "Vision"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Teleport Boots",
+          "synonyms": [
+            "Tele boots",
+            "TP boots"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tension Bow",
+          "synonyms": [
+            "TB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tornado Trigger",
+          "synonyms": [
+            "Tornado",
+            "TT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tyrant's Monocle",
+          "synonyms": [
+            "Monocle",
+            "TM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "War Treads",
+          "synonyms": [
+            "WT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Weapon Infusion",
+          "synonyms": [
+            "Weapon infuse",
+            "Wp infuse"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "itemTypes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Boots",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Crystal",
+          "synonyms": [
+            "Cp"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Defense",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Infusion",
+          "synonyms": [
+            "Infuse"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Utility",
+          "synonyms": [
+            "Captain",
+            "Support"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Weapon",
+          "synonyms": [
+            "Wp"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "partyCode",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "party",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "play together",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sniping",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pcPlatform",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Mac",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PC",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "screenFreeze",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "freeze",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "serverRegion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "region",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "skinsAndTalents",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "skin",
+          "synonyms": [
+            "skins"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "skins",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "talent",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "talents",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "startingHeroes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "starting heroes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "I don't really get what are you saying. Can you try to explain or use another words?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1533665915866"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#General_Greetings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1533665752753",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1533822216425"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As in <a href=\"https://en.wikipedia.org/wiki/Vainglory_(video_game)#Gameplay\">Wikipedia</a>\n\nVainglory is a free-to-play video game with in-game purchases, developed and published by Super Evil Megacorp for iOS, Android and PC. The game is a version of the MOBA wherein two opposing teams of three or five players fight to destroy the enemy by controlling the path between the bases, which is lined by turrets and guarded by AI-controlled enemy creatures called minions. Off the path, players battle for control points that provide resources. The game was released for iOS on November 16, 2014, after being soft-launched for over half a year, with the Android version being released on July 2, 2015. A Mac and Microsoft Windows version of the game was released in July 2018. Through cross-platform play, players on all four platforms can play together simultaneously.\n\nThe game's development started in 2012 upon the forming of Super Evil Megacorp. The game was unveiled at Apple's September 2014 iPhone 6 announcement event to demonstrate the platform's Metal graphics API. Super Evil Megacorp attempted to make a game that would entertain players for hours and encourage in-person multiplayer experiences similar to that of a LAN party.\n\nVainglory received generally favorable reviews. Critics praised the game's graphics, characters, and level design, but criticized its lack of team communication features. Reviewers disagreed on the game's degree of accessibility to newcomers, which was part of the reason why it received mixed reviews.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#gameInformation",
+      "dialog_node": "node_1_1688572448839",
+      "previous_sibling": "node_5_1688572445997"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#technicalSupport",
+      "dialog_node": "node_1_1688572461942",
+      "previous_sibling": "node_2_1688572460461"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Byee. See you later"
+              },
+              {
+                "text": "Goodbye!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#General_Ending",
+      "dialog_node": "node_2_1533665915866",
+      "previous_sibling": "node_1_1533665752753"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am a chat bot that is designed to answer your questions about Vainglory"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#General_About_You",
+      "dialog_node": "node_2_1533822216425",
+      "previous_sibling": "node_9_1688634164260"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are some helpful links:\n  1. <a href=\"bubbleland.org\">Bubbleland Website</a>\n  2. <a href=\"discord.gg/bubbleland\">Bubbleland Official Discord Server</a>\n  3. <a href=\"reddit.com/r/vainglorygame\">Vainglory Reddit</a>\n  4. <a href=\"discord.gg/vainglory\">Vainglory Official Discord Server</a>\n  5. <a href=\"vaingloryfire.com\">Vaingloryfire Website</a>\n  6. <a href=\"brokenmyth.net\">Brokenmyth Website</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#otherSources",
+      "dialog_node": "node_2_1688572460461",
+      "previous_sibling": "node_8_1688572458631"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, <? @sys-person.literal ?>! It's lovely to meet you. How can I help you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1533822216425",
+      "context": {
+        "username": "<? @sys-person.literal ?>"
+      },
+      "metadata": {},
+      "conditions": "@sys-person",
+      "dialog_node": "node_3_1533822448219"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "query": "Tell me about @gameHeroes",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_9_1688634164260",
+      "context": {},
+      "conditions": "@gameHeroes",
+      "dialog_node": "node_3_1688634253467"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I help you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1533822216425",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_4_1533822931620",
+      "previous_sibling": "node_3_1533822448219"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A grand comeback is unlikely but SEMC is slowly working towards the Community Edition that they promised us. We have been stuck at <a href=\"http://vainglorygame.com/news/vainglory-community-edition\">stage 1B</a> since ~3 years ago. See this <a href=\"https://twitter.com/TeamBubbleland/status/1583371844367060993\">response</a> by Vainglory developer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#gameUpdates",
+      "dialog_node": "node_4_1688568963066",
+      "previous_sibling": "node_1_1688572448839"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good day to you!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1533665752753",
+      "metadata": {},
+      "dialog_node": "node_5_1533823602062",
+      "previous_sibling": "node_6_1533823798863"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vainglory became unprofitable. For the full picture, watch the following videos:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "What the hell is happening to Vainglory? What is Vainglory \"Community Edition\"? + Vainglory History",
+            "source": "https://www.youtube.com/watch?v=6FAJmkqEARs",
+            "description": "by Excoundrel",
+            "response_type": "video",
+            "channel_options": {
+              "chat": {
+                "dimensions": {
+                  "base_height": "200"
+                }
+              }
+            }
+          },
+          {
+            "title": "HOW SEMC KILLED VAINGLORY (THE SAD TRUTH) - VAINGLORY SHUTDOWN",
+            "source": "https://www.youtube.com/watch?v=bLgZJIyWk1E",
+            "description": "by Chamu",
+            "response_type": "video",
+            "channel_options": {
+              "chat": {
+                "dimensions": {
+                  "base_height": "200"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "conditions": "#deadGame",
+      "dialog_node": "node_5_1688572445997",
+      "previous_sibling": "node_6_1688572442981"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good day to you, $username!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1533665752753",
+      "metadata": {},
+      "conditions": "$username",
+      "dialog_node": "node_6_1533823798863"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "For now, the tournament is held by the communities. You can find out and find information regarding the next tournament at communities as listed <a href=\"https://bubbleland.org/vainglory-communities\">here</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#competitiveScene",
+      "dialog_node": "node_6_1688572442981",
+      "previous_sibling": "node_6_1688577198947"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can find Vainglory active communities at this <a href=\"https://bubbleland.org/vainglory-communities\">site</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#communitiesVainglory",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1688577198947",
+      "previous_sibling": "node_8_1688568965141"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Account, party, rank, and chat are gone. All cosmetics and talents are unlocked for everyone. It is still possible to “party” and play with your friends with by sniping or using the code system. For more details, continue reading or visit our <a href=\"https://bubbleland.org/play-together\">Play Together</a> article and this <a href=\"https://www.everlastingnight.org/954/new-party-code-feature-to-chose-sides/\">guide</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#accountProblem",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1688568965141",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#newMechanics",
+      "dialog_node": "node_8_1688572458631",
+      "previous_sibling": "node_4_1688568963066"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What hero do you want to know about?"
+              },
+              {
+                "text": "What hero would you like to know?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#heroDetails",
+      "dialog_node": "node_9_1688634164260",
+      "previous_sibling": "node_1_1688572461942"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "If your screen freezes, people assumption so far is that the issue caused by internet problem, specifically using Indihome as their internet service provider. After back-end update of Vainglory, people think that Indihome doesn't want to connect to Vainglory's server. Even that developer does not claim this reasoning yet, it is actually quite reasonable since people solved this issue by changing their internet or Wi-Fi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1688572461942",
+      "conditions": "@screenFreeze",
+      "dialog_node": "response_10_1688576548707",
+      "previous_sibling": "response_5_1688576348854"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "To play together, you have so snipe your friends. Sniping refers to queuing with your friends at the same time in order to get into the same match. To be in the same team, you can use the “party” code system explained below. Sniping servers are Discord servers made for playing Vainglory together.\nTo be in team A, prepend 1200-1_ to your IGN/username and ask your friends to do the same, e.g.\n  1200-1_MarViels\n  1200-1_gemmeg\nStart the queue and you will end up in Team A. Using 1200-2_ will put you in Team B. For full private party, use a number above 3000, e.g.\n  3333-1_TeamA  3333-2_TeamB\n  3333_AnyTeam"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1688572458631",
+      "conditions": "@partyCode",
+      "dialog_node": "response_1_1688574975277",
+      "previous_sibling": "response_8_1688574623492"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes, with a VPN. Ignore the dropdown menu in game because it is broken. Set the desired region for your VPN and turn it on before opening Vainglory. Expect suboptimal ping. Some players report better ping when they turn off the VPN after the draft phase.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1688572458631",
+      "conditions": "@serverRegion",
+      "dialog_node": "response_1_1688575258701",
+      "previous_sibling": "response_2_1688575112477"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vainglory features three primary roles: laner, jungler, and captain.\nThe laner focuses on farming and pushing the lane, the jungler clears neutral jungle camps and assists in ganking, and the captain supports the team with crowd control and utility."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1688572458631",
+      "conditions": "@gameRoles",
+      "dialog_node": "response_2_1688575112477",
+      "previous_sibling": "response_1_1688574975277"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes, with a VPN. Ignore the dropdown menu in game because it is broken. Set the desired region for your VPN and turn it on before opening Vainglory. Expect suboptimal ping. Some players report better ping when they turn off the VPN after the draft phase."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1688572461942",
+      "conditions": "@serverRegion",
+      "dialog_node": "response_3_1688575671636"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "On the latest version of Vainglory on Android and iOS, you can use both skins and talents. To use them on PC, you have to configure some files connecting mobile device to computer device. For more explanation, you can find it <a href=\"https://bubbleland.org/how-to-use-skins#Windows\">here</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1688572461942",
+      "conditions": "@skinsAndTalents",
+      "dialog_node": "response_3_1688630270015",
+      "previous_sibling": "response_3_1688575671636"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "After Back-end update of Vainglory, some people indeed experiencing connection issues such as high ping, wifi issues (ASAP in home screen), etc. Unfortunately, this issues is currently being fix by developer and what we can do is using proper internet connection."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1688572461942",
+      "conditions": "@connectionIssues",
+      "dialog_node": "response_5_1688576348854",
+      "previous_sibling": "response_6_1688576266255"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What hero do you want to know about?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1688634164260",
+      "disabled": true,
+      "conditions": "#heroDetails",
+      "dialog_node": "response_5_1688634201351",
+      "previous_sibling": "node_3_1688634253467"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1688568963066",
+      "disabled": true,
+      "conditions": "#gameUpdates",
+      "dialog_node": "response_6_1688569055894"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "To run Vainglory on PC, you need to meet the following minimum system requirements:\nOperating System: Windows 7 or later, or macOS 10.11 or later.\nProcessor: Dual-core CPU with 1.8 GHz or higher.\nMemory: 4 GB RAM or higher.\nGraphics: DirectX 11-compatible graphics card with at least 1 GB VRAM.\nStorage: 2 GB available space."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1688572461942",
+      "conditions": "@gameSystemRequirements",
+      "dialog_node": "response_6_1688576266255",
+      "previous_sibling": "response_9_1688575924781"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It's nice to meet you!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1533665752753",
+      "dialog_node": "response_8_1688568800863",
+      "previous_sibling": "node_5_1533823602062"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good heroes for new learners are Ringo, Koshka, and Catherine. For more early recommended heroes, you can try ask your friends and people in communities since they know more about the meta at their time.\n\nYou can find communities at <a href=\"https://bubbleland.org/vainglory-communities\">this url</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1688572458631",
+      "conditions": "@startingHeroes",
+      "dialog_node": "response_8_1688574623492"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As in <a href=\"https://en.wikipedia.org/wiki/Vainglory_(video_game)#Gameplay\">Wikipedia</a>\n\nVainglory is a free-to-play video game with in-game purchases, developed and published by Super Evil Megacorp for iOS, Android and PC. The game is a version of the MOBA wherein two opposing teams of three or five players fight to destroy the enemy by controlling the path between the bases, which is lined by turrets and guarded by AI-controlled enemy creatures called minions. Off the path, players battle for control points that provide resources. The game was released for iOS on November 16, 2014, after being soft-launched for over half a year, with the Android version being released on July 2, 2015. A Mac and Microsoft Windows version of the game was released in July 2018. Through cross-platform play, players on all four platforms can play together simultaneously.\n\nThe game's development started in 2012 upon the forming of Super Evil Megacorp. The game was unveiled at Apple's September 2014 iPhone 6 announcement event to demonstrate the platform's Metal graphics API. Super Evil Megacorp attempted to make a game that would entertain players for hours and encourage in-person multiplayer experiences similar to that of a LAN party.\n\nVainglory received generally favorable reviews. Critics praised the game's graphics, characters, and level design, but criticized its lack of team communication features. Reviewers disagreed on the game's degree of accessibility to newcomers, which was part of the reason why it received mixed reviews.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1688572448839",
+      "disabled": true,
+      "dialog_node": "response_8_1688577029492"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can download the Windows client from our <a href=\"https://bubbleland.org/download-vainglory>\"Download Vainglory page</a>. Due to a bug, you will still need the help of iOS or Android version to queue. Follow this <a href=\"https://bubbleland.org/how-to-use-skins#windows\">guide</a>. There is no working macOS client for now. New PC and Mac versions will be released with the <a href=\"https://discord.com/channels/164080359871348736/762788445135306762/1063475275045810256\">next update</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1688572461942",
+      "conditions": "@pcPlatform",
+      "dialog_node": "response_9_1688575924781",
+      "previous_sibling": "response_3_1688630270015"
+    },
+    {
+      "type": "standard",
+      "title": "Conversation Starts",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to the Watson Assistant tutorial!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "",
+  "name": "VaingloryAssistant-dialog"
+}

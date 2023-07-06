@@ -1,0 +1,166 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+  <header class="header">
+    <section class="container">
+      <form method="post">
+        <div class="row">
+          <fieldset class="column">
+            <label for="teamBlue">Team Blue</label>
+            <input type="text" placeholder="Blue" name="teamBlue">
+          </fieldset>
+
+          <fieldset class="column">
+            <label for="teamRed">Team Red</label>
+            <input type="text" placeholder="Red" name="teamRed">
+          </fieldset>
+        </div>
+
+        <fieldset class="column">
+          <label for="draftField">Construct your Draft</label>
+          <textarea name="draftField" rows="5">[
+                          {"index": 1, "side": "1", "type": "ban"},
+                          {"index": 2, "side": "2", "type": "ban"},
+                          {"index": 3, "side": "1", "type": "pick"},
+                          {"index": 4, "side": "2", "type": "pick"},
+                          {"index": 5, "side": "1", "type": "ban"},
+                          {"index": 6, "side": "2", "type": "ban"},
+                          {"index": 7, "side": "2", "type": "pick"},
+                          {"index": 8, "side": "1", "type": "pick"},
+                          {"index": 9, "side": "1", "type": "pick"},
+                          {"index": 10, "side": "2", "type": "pick"}
+                      ]</textarea>
+        </fieldset>
+
+        <div class="row">
+          <fieldset class="column">
+            <label for="secondsPerTurn"> Seconds per turn </label>
+            <input type="text" value="30" name="secondsPerTurn">
+          </fieldset>
+
+          <fieldset class="column">
+            <label for="bonusTime"> Bonus time </label>
+            <input type="text" value="60" name="bonusTime">
+          </fieldset>
+        </div>
+
+        <fieldset class="column">
+          <input id="customBackground" type="checkbox" name="customBackground"><label for="customBackground">Custom background?</label><br>
+        </fieldset>
+
+        <fieldset class="column" id="customBackgroundField" style="display: none;">
+          <input type="text" value="https://....png" name="customBackgroundField">
+        </fieldset>
+
+        <fieldset class="column">
+          <input id="overrideHeroes" type="checkbox" name="overrideHeroes"><label for="overrideHeroes">Override Heroes? (Amael last update)</label><br>
+        </fieldset>
+
+        <fieldset class="column" id="overrideHeroesField" style="display: none;">
+          <textarea name="heroesField" rows="5"> [
+            {"name": "adagio"},
+            {"name": "alpha"},
+            {"name": "amael"},
+            {"name": "anka"},
+            {"name": "ardan"},
+            {"name": "baptiste"},
+            {"name": "baron"},
+            {"name": "blackfeather"},
+            {"name": "caine"},
+            {"name": "catherine"},
+            {"name": "celeste"},
+            {"name": "churnwalker"},
+            {"name": "flicker"},
+            {"name": "fortress"},
+            {"name": "glaive"},
+            {"name": "grace"},
+            {"name": "grumpjaw"},
+            {"name": "gwen"},
+            {"name": "idris"},
+            {"name": "inara"},
+            {"name": "ishtar"},
+            {"name": "joule"},
+            {"name": "karas"},
+            {"name": "kensei"},
+            {"name": "kestrel"},
+            {"name": "kinetic"},
+            {"name": "koshka"},
+            {"name": "krul"},
+            {"name": "lance"},
+            {"name": "leo"},
+            {"name": "lorelai"},
+            {"name": "lyra"},
+            {"name": "magnus"},
+            {"name": "malene"},
+            {"name": "miho"},
+            {"name": "ozo"},
+            {"name": "petal"},
+            {"name": "phinn"},
+            {"name": "reim"},
+            {"name": "reza"},
+            {"name": "ringo"},
+            {"name": "rona"},
+            {"name": "samuel"},
+            {"name": "san-feng"},
+            {"name": "saw"},
+            {"name": "shin"},
+            {"name": "silvernail"},
+            {"name": "skaarf"},
+            {"name": "skye"},
+            {"name": "taka"},
+            {"name": "tony"},
+            {"name": "varya"},
+            {"name": "viola"},
+            {"name": "vox"},
+            {"name": "warhawk"},
+            {"name": "yates"},
+            {"name": "ylva"}
+        ]</textarea>
+        </fieldset>
+
+        <div class="column">
+          <input id="submit" class="button button-outline" type="submit" value="Get Started">
+        </div>
+
+        {% module xsrf_form_html() %}
+      </form>
+    </section>
+  </header>
+
+  <section class="container" id="getting-started">
+    <h3 class="title">Customize the draft</h3>
+    <p class="description">Here are some steps to get started. First, provide the teamnames. Then construct your preferred draft order. Now you should be good to go! Optionally, you can override the draft to include (or exclude) heroes and their images.</p>
+
+    <div class="example">
+      <p><strong>Construct the draft order</strong></p>
+      <p> The draft order is constructed with JSON objects as shown below. The index indicates the draft position the side indicates which team and the type indicates a ban or a pick action.</p>
+    </div>
+
+    <pre class="code prettyprint prettyprinted">
+      <code class="code-content">
+        <span class="pln"> {"index": 1, "side": "1", "type": "ban"}, </span>
+      </code>
+    </pre>
+
+    <div class="example">
+      <p><strong>Override the heroes</strong></p>
+      <p> To include a hero in the draft, just add a JSON object to the list with the hero's name.</p>
+    </div>
+
+    <pre class="code prettyprint prettyprinted">
+      <code class="code-content">
+        <span class="pln"> {"name": "adagio"} </span>
+      </code>
+    </pre>
+
+    <div class="example">
+      <p> If you want to override the default image, provide an img source. </p>
+    </div>
+
+    <pre class="code prettyprint prettyprinted">
+      <code class="code-content">
+        <span class="pln"> {"name": "adagio", "img": "https://...adagio.png"} </span>
+      </code>
+    </pre>
+</section>
+{% end %}

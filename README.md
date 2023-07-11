@@ -10,7 +10,7 @@ The website works as a draft simulator for Vainglory
 - Personal Mentor   : Agistira Lamunde
 
 ## Documentary of Watson Assistant
-### Dialog Intents
+### <summary>Dialog Intents</summary>
 ![Dialog Intents](https://github.com/fHACKrenn/CapstoneProject/blob/master/src/images/dialogIntents.png?raw=true)
 ### Dialog Entities
 ![Dialog Entities](https://github.com/fHACKrenn/CapstoneProject/blob/master/src/images/dialogEntities.png?raw=true)

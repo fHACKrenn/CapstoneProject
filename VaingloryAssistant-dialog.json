@@ -981,15 +981,15 @@
             {
               "entity": "gameRoles",
               "location": [
-                23,
-                28
+                32,
+                41
               ]
             },
             {
               "entity": "gameRoles",
               "location": [
-                32,
-                41
+                23,
+                28
               ]
             }
           ]
@@ -1039,15 +1039,15 @@
             {
               "entity": "pcPlatform",
               "location": [
-                14,
-                16
+                20,
+                23
               ]
             },
             {
               "entity": "pcPlatform",
               "location": [
-                20,
-                23
+                14,
+                16
               ]
             }
           ]
@@ -1141,6 +1141,22 @@
         }
       ],
       "description": "Technical support for Vainglory issues and problems"
+    },
+    {
+      "intent": "vaingloryce",
+      "examples": [
+        {
+          "text": "Vainglory: Community Edition"
+        }
+      ]
+    },
+    {
+      "intent": "vaingloryheroeswiki",
+      "examples": [
+        {
+          "text": "Vainglory Heroes Wiki"
+        }
+      ]
     },
     {
       "intent": "yes",
@@ -2069,16 +2085,7 @@
           {
             "values": [
               {
-                "text": "I didn't understand. You can try rephrasing."
-              },
-              {
-                "text": "Can you reword your statement? I'm not understanding."
-              },
-              {
-                "text": "I didn't get your meaning."
-              },
-              {
-                "text": "I don't really get what are you saying. Can you try to explain or use another words?"
+                "text": "I don't quite understand your request, please choose from these options before you asks something"
               }
             ],
             "response_type": "text",
@@ -2087,9 +2094,26 @@
         ]
       },
       "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
       "conditions": "anything_else",
       "dialog_node": "Anything else",
       "previous_sibling": "node_2_1533665915866"
+    },
+    {
+      "type": "standard",
+      "parent": "Welcome",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
+      },
+      "conditions": "#vaingloryce",
+      "dialog_node": "node_10_1689091432529",
+      "previous_sibling": "node_1_1689083222458"
     },
     {
       "type": "standard",
@@ -2112,7 +2136,7 @@
           {
             "values": [
               {
-                "text": "As in <a href=\"https://en.wikipedia.org/wiki/Vainglory_(video_game)#Gameplay\">Wikipedia</a>\n\nVainglory is a free-to-play video game with in-game purchases, developed and published by Super Evil Megacorp for iOS, Android and PC. The game is a version of the MOBA wherein two opposing teams of three or five players fight to destroy the enemy by controlling the path between the bases, which is lined by turrets and guarded by AI-controlled enemy creatures called minions. Off the path, players battle for control points that provide resources. The game was released for iOS on November 16, 2014, after being soft-launched for over half a year, with the Android version being released on July 2, 2015. A Mac and Microsoft Windows version of the game was released in July 2018. Through cross-platform play, players on all four platforms can play together simultaneously.\n\nThe game's development started in 2012 upon the forming of Super Evil Megacorp. The game was unveiled at Apple's September 2014 iPhone 6 announcement event to demonstrate the platform's Metal graphics API. Super Evil Megacorp attempted to make a game that would entertain players for hours and encourage in-person multiplayer experiences similar to that of a LAN party.\n\nVainglory received generally favorable reviews. Critics praised the game's graphics, characters, and level design, but criticized its lack of team communication features. Reviewers disagreed on the game's degree of accessibility to newcomers, which was part of the reason why it received mixed reviews.\n"
+                "text": "As in [Wikipedia](https://en.wikipedia.org/wiki/Vainglory_(video_game))\n\nVainglory is a free-to-play video game with in-game purchases, developed and published by Super Evil Megacorp for iOS, Android and PC. The game is a version of the MOBA wherein two opposing teams of three or five players fight to destroy the enemy by controlling the path between the bases, which is lined by turrets and guarded by AI-controlled enemy creatures called minions. Off the path, players battle for control points that provide resources. The game was released for iOS on November 16, 2014, after being soft-launched for over half a year, with the Android version being released on July 2, 2015. A Mac and Microsoft Windows version of the game was released in July 2018. Through cross-platform play, players on all four platforms can play together simultaneously.\n\nThe game's development started in 2012 upon the forming of Super Evil Megacorp. The game was unveiled at Apple's September 2014 iPhone 6 announcement event to demonstrate the platform's Metal graphics API. Super Evil Megacorp attempted to make a game that would entertain players for hours and encourage in-person multiplayer experiences similar to that of a LAN party.\n\nVainglory received generally favorable reviews. Critics praised the game's graphics, characters, and level design, but criticized its lack of team communication features. Reviewers disagreed on the game's degree of accessibility to newcomers, which was part of the reason why it received mixed reviews.\n"
               }
             ],
             "response_type": "text",
@@ -2120,6 +2144,7 @@
           }
         ]
       },
+      "parent": "node_3_1689085424706",
       "metadata": {
         "_customization": {
           "mcr": false
@@ -2127,10 +2152,11 @@
       },
       "conditions": "#gameInformation",
       "dialog_node": "node_1_1688572448839",
-      "previous_sibling": "node_5_1688572445997"
+      "previous_sibling": "node_6_1688572442981"
     },
     {
       "type": "standard",
+      "parent": "node_3_1689085424706",
       "metadata": {
         "_customization": {
           "mcr": true
@@ -2138,7 +2164,18 @@
       },
       "conditions": "#technicalSupport",
       "dialog_node": "node_1_1688572461942",
-      "previous_sibling": "node_2_1688572460461"
+      "previous_sibling": "node_6_1688577198947"
+    },
+    {
+      "type": "standard",
+      "parent": "Welcome",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_9_1688634164260"
+      },
+      "conditions": "#vaingloryheroeswiki",
+      "dialog_node": "node_1_1689083222458"
     },
     {
       "type": "standard",
@@ -2181,7 +2218,7 @@
       "metadata": {},
       "conditions": "#General_About_You",
       "dialog_node": "node_2_1533822216425",
-      "previous_sibling": "node_9_1688634164260"
+      "previous_sibling": "node_4_1689085155103"
     },
     {
       "type": "standard",
@@ -2190,7 +2227,7 @@
           {
             "values": [
               {
-                "text": "Here are some helpful links:\n  1. <a href=\"bubbleland.org\">Bubbleland Website</a>\n  2. <a href=\"discord.gg/bubbleland\">Bubbleland Official Discord Server</a>\n  3. <a href=\"reddit.com/r/vainglorygame\">Vainglory Reddit</a>\n  4. <a href=\"discord.gg/vainglory\">Vainglory Official Discord Server</a>\n  5. <a href=\"vaingloryfire.com\">Vaingloryfire Website</a>\n  6. <a href=\"brokenmyth.net\">Brokenmyth Website</a>"
+                "text": "Here are some helpful links:\n  1. [Bubbleland Website](bubbleland.org)\n  2. [Bubbleland Official Discord Server](discord.gg/bubbleland)\n  3. [Vainglory Reddit](reddit.com/r/vainglorygame)\n  4. [Vainglory Official Discord Server](discord.gg/vainglory)\n  5. [Vaingloryfire Website](vaingloryfire.com)\n  6. [Brokenmyth Website](brokenmyth.net)"
               }
             ],
             "response_type": "text",
@@ -2198,6 +2235,7 @@
           }
         ]
       },
+      "parent": "node_3_1689085424706",
       "conditions": "#otherSources",
       "dialog_node": "node_2_1688572460461",
       "previous_sibling": "node_8_1688572458631"
@@ -2230,17 +2268,81 @@
       "output": {
         "generic": [
           {
-            "query": "Tell me about @gameHeroes",
-            "filter": "",
+            "query": "",
+            "filter": "title:@gameHeroes",
             "query_type": "natural_language",
             "response_type": "search_skill"
           }
         ]
       },
       "parent": "node_9_1688634164260",
-      "context": {},
+      "context": {
+        "heroname": "/^[a-zA-Z ]{2,30}$/"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
       "conditions": "@gameHeroes",
-      "dialog_node": "node_3_1688634253467"
+      "dialog_node": "node_3_1689084457732"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What do you want to know about Vainglory: Community Edition?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Frequently Asked Questions",
+            "options": [
+              {
+                "label": "How to get my account back?",
+                "value": {
+                  "input": {
+                    "text": "How to get my account back?"
+                  }
+                }
+              },
+              {
+                "label": "What happened to Vainglory?",
+                "value": {
+                  "input": {
+                    "text": "What happened to Vainglory?"
+                  }
+                }
+              },
+              {
+                "label": "Is there any community for Vainglory?",
+                "value": {
+                  "input": {
+                    "text": "Is there any community for Vainglory?"
+                  }
+                }
+              },
+              {
+                "label": "Where can i find other sources of Vainglory?",
+                "value": {
+                  "input": {
+                    "text": "Where can i find other sources of Vainglory?"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1689085155103",
+      "conditions": "#vaingloryce",
+      "dialog_node": "node_3_1689085424706"
     },
     {
       "type": "standard",
@@ -2270,7 +2372,7 @@
           {
             "values": [
               {
-                "text": "A grand comeback is unlikely but SEMC is slowly working towards the Community Edition that they promised us. We have been stuck at <a href=\"http://vainglorygame.com/news/vainglory-community-edition\">stage 1B</a> since ~3 years ago. See this <a href=\"https://twitter.com/TeamBubbleland/status/1583371844367060993\">response</a> by Vainglory developer."
+                "text": "A grand comeback is unlikely but SEMC is slowly working towards the Community Edition that they promised us. We have been stuck at [stage 1B](http://vainglorygame.com/news/vainglory-community-edition) since ~3 years ago. See this [response](https://twitter.com/TeamBubbleland/status/1583371844367060993) by Vainglory developer."
               }
             ],
             "response_type": "text",
@@ -2278,6 +2380,7 @@
           }
         ]
       },
+      "parent": "node_3_1689085424706",
       "metadata": {
         "_customization": {
           "mcr": false
@@ -2285,7 +2388,13 @@
       },
       "conditions": "#gameUpdates",
       "dialog_node": "node_4_1688568963066",
-      "previous_sibling": "node_1_1688572448839"
+      "previous_sibling": "node_5_1688572445997"
+    },
+    {
+      "type": "folder",
+      "conditions": "#vaingloryce",
+      "dialog_node": "node_4_1689085155103",
+      "previous_sibling": "node_9_1688634164260"
     },
     {
       "type": "response_condition",
@@ -2348,9 +2457,10 @@
           }
         ]
       },
+      "parent": "node_3_1689085424706",
       "conditions": "#deadGame",
       "dialog_node": "node_5_1688572445997",
-      "previous_sibling": "node_6_1688572442981"
+      "previous_sibling": "node_1_1688572461942"
     },
     {
       "type": "response_condition",
@@ -2378,7 +2488,7 @@
           {
             "values": [
               {
-                "text": "For now, the tournament is held by the communities. You can find out and find information regarding the next tournament at communities as listed <a href=\"https://bubbleland.org/vainglory-communities\">here</a>"
+                "text": "For now, the tournament is held by the communities. You can find out and find information regarding the next tournament at communities as listed [here](https://bubbleland.org/vainglory-communities)"
               }
             ],
             "response_type": "text",
@@ -2386,9 +2496,10 @@
           }
         ]
       },
+      "parent": "node_3_1689085424706",
       "conditions": "#competitiveScene",
       "dialog_node": "node_6_1688572442981",
-      "previous_sibling": "node_6_1688577198947"
+      "previous_sibling": "node_2_1688572460461"
     },
     {
       "type": "standard",
@@ -2397,7 +2508,7 @@
           {
             "values": [
               {
-                "text": "You can find Vainglory active communities at this <a href=\"https://bubbleland.org/vainglory-communities\">site</a>"
+                "text": "You can find Vainglory active communities at this [site](https://bubbleland.org/vainglory-communities)"
               }
             ],
             "response_type": "text",
@@ -2405,8 +2516,8 @@
           }
         ]
       },
+      "parent": "node_3_1689085424706",
       "conditions": "#communitiesVainglory",
-      "digress_in": "does_not_return",
       "dialog_node": "node_6_1688577198947",
       "previous_sibling": "node_8_1688568965141"
     },
@@ -2417,7 +2528,7 @@
           {
             "values": [
               {
-                "text": "Account, party, rank, and chat are gone. All cosmetics and talents are unlocked for everyone. It is still possible to “party” and play with your friends with by sniping or using the code system. For more details, continue reading or visit our <a href=\"https://bubbleland.org/play-together\">Play Together</a> article and this <a href=\"https://www.everlastingnight.org/954/new-party-code-feature-to-chose-sides/\">guide</a>."
+                "text": "Account, party, rank, and chat are gone. All cosmetics and talents are unlocked for everyone. It is still possible to “party” and play with your friends with by sniping or using the code system. For more details, continue reading or visit our [Play Together](https://bubbleland.org/play-together) article and this [guide](https://www.everlastingnight.org/954/new-party-code-feature-to-chose-sides/)."
               }
             ],
             "response_type": "text",
@@ -2425,13 +2536,13 @@
           }
         ]
       },
+      "parent": "node_3_1689085424706",
       "conditions": "#accountProblem",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_8_1688568965141",
-      "previous_sibling": "Welcome"
+      "dialog_node": "node_8_1688568965141"
     },
     {
       "type": "standard",
+      "parent": "node_3_1689085424706",
       "metadata": {
         "_customization": {
           "mcr": true
@@ -2456,6 +2567,11 @@
             ],
             "response_type": "text",
             "selection_policy": "random"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
           }
         ]
       },
@@ -2464,9 +2580,9 @@
           "mcr": false
         }
       },
-      "conditions": "#heroDetails",
+      "conditions": "#vaingloryheroeswiki",
       "dialog_node": "node_9_1688634164260",
-      "previous_sibling": "node_1_1688572461942"
+      "previous_sibling": "Welcome"
     },
     {
       "type": "response_condition",
@@ -2574,7 +2690,7 @@
           {
             "values": [
               {
-                "text": "On the latest version of Vainglory on Android and iOS, you can use both skins and talents. To use them on PC, you have to configure some files connecting mobile device to computer device. For more explanation, you can find it <a href=\"https://bubbleland.org/how-to-use-skins#Windows\">here</a>"
+                "text": "On the latest version of Vainglory on Android and iOS, you can use both skins and talents. To use them on PC, you have to configure some files connecting mobile device to computer device. For more explanation, you can find it [here](https://bubbleland.org/how-to-use-skins#Windows)"
               }
             ],
             "response_type": "text",
@@ -2615,10 +2731,35 @@
             "values": [
               {
                 "text": "What hero do you want to know about?"
+              },
+              {
+                "text": "What hero would you like to know?"
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
+          },
+          {
+            "title": "Vainglory Heroes",
+            "options": [
+              {
+                "label": "Lance",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Ringo",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
           }
         ]
       },
@@ -2626,7 +2767,7 @@
       "disabled": true,
       "conditions": "#heroDetails",
       "dialog_node": "response_5_1688634201351",
-      "previous_sibling": "node_3_1688634253467"
+      "previous_sibling": "node_3_1689084457732"
     },
     {
       "type": "response_condition",
@@ -2690,7 +2831,7 @@
           {
             "values": [
               {
-                "text": "Good heroes for new learners are Ringo, Koshka, and Catherine. For more early recommended heroes, you can try ask your friends and people in communities since they know more about the meta at their time.\n\nYou can find communities at <a href=\"https://bubbleland.org/vainglory-communities\">this url</a>"
+                "text": "Good heroes for new learners are Ringo, Koshka, and Catherine. For more early recommended heroes, you can try ask your friends and people in communities since they know more about the meta at their time.\n\nYou can find communities at [this url](https://bubbleland.org/vainglory-communities)"
               }
             ],
             "response_type": "text",
@@ -2728,7 +2869,7 @@
           {
             "values": [
               {
-                "text": "You can download the Windows client from our <a href=\"https://bubbleland.org/download-vainglory>\"Download Vainglory page</a>. Due to a bug, you will still need the help of iOS or Android version to queue. Follow this <a href=\"https://bubbleland.org/how-to-use-skins#windows\">guide</a>. There is no working macOS client for now. New PC and Mac versions will be released with the <a href=\"https://discord.com/channels/164080359871348736/762788445135306762/1063475275045810256\">next update</a>."
+                "text": "You can download the Windows client from our [Download Vainglory page](https://bubbleland.org/download-vainglory). Due to a bug, you will still need the help of iOS or Android version to queue. Follow this [guide](https://bubbleland.org/how-to-use-skins#windows). There is no working macOS client for now. New PC and Mac versions will be released with the [next update](https://discord.com/channels/164080359871348736/762788445135306762/1063475275045810256)."
               }
             ],
             "response_type": "text",
@@ -2747,13 +2888,26 @@
       "output": {
         "generic": [
           {
-            "values": [
+            "title": "What do you want to know?",
+            "options": [
               {
-                "text": "Welcome to the Watson Assistant tutorial!"
+                "label": "Vainglory Heroes Wiki",
+                "value": {
+                  "input": {
+                    "text": "Vainglory Heroes Wiki"
+                  }
+                }
+              },
+              {
+                "label": "Vainglory: Community Edition",
+                "value": {
+                  "input": {
+                    "text": "Vainglory: Community Edition"
+                  }
+                }
               }
             ],
-            "response_type": "text",
-            "selection_policy": "sequential"
+            "response_type": "option"
           }
         ]
       },

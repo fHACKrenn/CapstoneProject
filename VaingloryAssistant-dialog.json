@@ -913,18 +913,6 @@
       "description": "Express concerns about the security of the bot."
     },
     {
-      "intent": "heroDetails",
-      "examples": [
-        {
-          "text": "I want to know about Catherine"
-        },
-        {
-          "text": "I want to know about heroes"
-        }
-      ],
-      "description": "Details of heroes using watson discovery web crawl"
-    },
-    {
       "intent": "newMechanics",
       "examples": [
         {
@@ -1153,6 +1141,9 @@
     {
       "intent": "vaingloryheroeswiki",
       "examples": [
+        {
+          "text": "I want to know about Vainglory heroes"
+        },
         {
           "text": "Vainglory Heroes Wiki"
         }
@@ -2150,6 +2141,11 @@
           "mcr": false
         }
       },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
+      },
       "conditions": "#gameInformation",
       "dialog_node": "node_1_1688572448839",
       "previous_sibling": "node_6_1688572442981"
@@ -2161,6 +2157,11 @@
         "_customization": {
           "mcr": true
         }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
       },
       "conditions": "#technicalSupport",
       "dialog_node": "node_1_1688572461942",
@@ -2236,6 +2237,11 @@
         ]
       },
       "parent": "node_3_1689085424706",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
+      },
       "conditions": "#otherSources",
       "dialog_node": "node_2_1688572460461",
       "previous_sibling": "node_8_1688572458631"
@@ -2276,9 +2282,7 @@
         ]
       },
       "parent": "node_9_1688634164260",
-      "context": {
-        "heroname": "/^[a-zA-Z ]{2,30}$/"
-      },
+      "context": {},
       "next_step": {
         "behavior": "jump_to",
         "selector": "body",
@@ -2295,6 +2299,9 @@
             "values": [
               {
                 "text": "What do you want to know about Vainglory: Community Edition?"
+              },
+              {
+                "text": "What else do you want to know about Vainglory: Community Edition?"
               }
             ],
             "response_type": "text",
@@ -2334,6 +2341,14 @@
                     "text": "Where can i find other sources of Vainglory?"
                   }
                 }
+              },
+              {
+                "label": "I want to know about Vainglory heroes",
+                "value": {
+                  "input": {
+                    "text": "I want to know about Vainglory heroes"
+                  }
+                }
               }
             ],
             "response_type": "option"
@@ -2343,6 +2358,18 @@
       "parent": "node_4_1689085155103",
       "conditions": "#vaingloryce",
       "dialog_node": "node_3_1689085424706"
+    },
+    {
+      "type": "standard",
+      "parent": "node_3_1689085424706",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1688634164260"
+      },
+      "conditions": "#vaingloryheroeswiki",
+      "dialog_node": "node_3_1689168721050",
+      "previous_sibling": "node_1_1688572448839"
     },
     {
       "type": "standard",
@@ -2385,6 +2412,11 @@
         "_customization": {
           "mcr": false
         }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
       },
       "conditions": "#gameUpdates",
       "dialog_node": "node_4_1688568963066",
@@ -2458,6 +2490,11 @@
         ]
       },
       "parent": "node_3_1689085424706",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
+      },
       "conditions": "#deadGame",
       "dialog_node": "node_5_1688572445997",
       "previous_sibling": "node_1_1688572461942"
@@ -2497,6 +2534,11 @@
         ]
       },
       "parent": "node_3_1689085424706",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
+      },
       "conditions": "#competitiveScene",
       "dialog_node": "node_6_1688572442981",
       "previous_sibling": "node_2_1688572460461"
@@ -2517,6 +2559,11 @@
         ]
       },
       "parent": "node_3_1689085424706",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
+      },
       "conditions": "#communitiesVainglory",
       "dialog_node": "node_6_1688577198947",
       "previous_sibling": "node_8_1688568965141"
@@ -2537,6 +2584,11 @@
         ]
       },
       "parent": "node_3_1689085424706",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
+      },
       "conditions": "#accountProblem",
       "dialog_node": "node_8_1688568965141"
     },
@@ -2547,6 +2599,11 @@
         "_customization": {
           "mcr": true
         }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1689085424706"
       },
       "conditions": "#newMechanics",
       "dialog_node": "node_8_1688572458631",
@@ -2567,11 +2624,6 @@
             ],
             "response_type": "text",
             "selection_policy": "random"
-          },
-          {
-            "values": [],
-            "response_type": "text",
-            "selection_policy": "sequential"
           }
         ]
       },
@@ -2888,7 +2940,7 @@
       "output": {
         "generic": [
           {
-            "title": "What do you want to know?",
+            "title": "What else do you want to know?",
             "options": [
               {
                 "label": "Vainglory Heroes Wiki",

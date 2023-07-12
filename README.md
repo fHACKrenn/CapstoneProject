@@ -21,6 +21,9 @@ The website works as a draft simulator for Vainglory. Original repository of the
 | **IBM Features**      | Watson Assistant, Watson Discovery                                |
 | **Project Site**      | https://vainglorydraft.fhackrenn.repl.co/                                |
 
+### Pattern's Flow
+![Pattern's Flow](https://github.com/IBM/watson-assistant-with-search-skill/raw/master/doc/source/images/architecture.png?raw=true)
+
 ## Documentary of Watson Assistant
 ### Code
 Watson Assistant and Watson Discovery don't do much coding. [VaingloryAssistant-dialog.json](https://github.com/fHACKrenn/CapstoneProject/blob/master/VaingloryAssistant-dialog.json "Dialog Structure") is a json file that contains dialog structure of Watson Assistant.
